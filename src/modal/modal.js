@@ -3,7 +3,7 @@
 
 // Declare app level module which depends on filters, and services
    angular.module('ui.semantic.modal', [])
-           .service('$modal', ['$controller', '$compile', '$rootScope', function($controller, $compile, $rootScope) {
+           .service('modal', ['$controller', '$compile', '$rootScope', function($controller, $compile, $rootScope) {
                    return function(options) {
                        var templateScope = (options.scope || $rootScope.$new());
                        if (options.controller) {
